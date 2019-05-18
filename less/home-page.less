@@ -62,10 +62,23 @@
       }
 
       .btn {
-        button{
-          .button;
+        
+        :hover{
+            background-color:@sea-shell;
+            color:@ebony-clay;
+          
         }
-      }
+        button{
+          background-color:@ebony-clay;
+          color:@sea-shell;
+          font-size:1.5rem;
+          width:100%
+          
+          
+          .button(center, center);
+        }
+       
+      
     }
 
     .walk-img {
@@ -79,4 +92,5 @@
       }
     }
   }
-}// home
+}
+}
