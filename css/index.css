@@ -170,6 +170,11 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .nav {
+    width: 100%;
+  }
+}
 .nav h1 {
   font-size: 5rem;
   padding-bottom: 20px;
@@ -181,6 +186,12 @@ p {
   color: #454A59;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .nav a {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -191,7 +202,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .home {
     display: flex;
     flex-flow: column;
@@ -200,6 +211,11 @@ footer {
 .home .intro img {
   width: 100%;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 95%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -212,8 +228,16 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-@media max-width: 500px {
+.home .blast {
+  width: 100%;
+}
+@media (max-width: 500px) {
   .home .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .launch {
     display: none;
   }
 }
@@ -239,9 +263,10 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .walk {
-    display: block;
+    display: flex;
+    flex-flow: column-reverse;
   }
 }
 .walk .walk-text {
@@ -261,19 +286,35 @@ footer {
   background-color: #23293B;
   color: #F1F1F1;
   font-size: 1.5rem;
-  width: 100% text-align: center; border-radius: 10px; width: 150px; height: 35px; justify-content: center; align-items: center;;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .walk .walk-text .btn button {
+    width: 100%;
+  }
 }
 .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-@media max-width: 500px {
+@media (max-width: 500px) {
   .walk .walk-text .walk-img {
-    display: block;
+    width: 100%;
   }
 }
-.walk .walk-text .walk-img img {
+.walk img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk img {
+    width: 100%;
+  }
 }

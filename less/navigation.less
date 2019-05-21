@@ -9,6 +9,9 @@
     flex-flow:column;
     justify-content: center;
     align-items:center;
+    @media @phone{
+        width:100%
+      }
 
     h1{
         font-size:5rem;
@@ -21,5 +24,9 @@
         padding: 0 25px;
         color: @nav-font;
         text-decoration:none;
+        @media @phone{
+            width:100%;
+            padding:0 10px;
+          }
     }
 }
